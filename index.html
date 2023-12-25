@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Counter App</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<main>
+				<div class="counter">
+					<div class="container">
+						<div class="counter__inner">
+							<h1 class="couner__title">
+								Заначка по погашению кредита на учебу
+							</h1>
+							<p id="counter-number" class="counter__number">0</p>
+							<div class="counter__button-value-wrapper">
+								<button
+									id="addOneValueButton"
+									data-value="1"
+									class="counter-btn btn"
+								>
+									+ 1р в заначку
+								</button>
+								<button
+									id="addTenValueButton"
+									data-value="10"
+									class="counter-btn btn"
+								>
+									+ 10р в заначку
+								</button>
+								<button
+									id="addHundredValueButton"
+									data-value="100"
+									class="counter-btn btn"
+								>
+									+ 100р в заначку
+								</button>
+							</div>
+							<button id="resetButton" class="counter-btn-reset btn">
+								Банкрот
+							</button>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<script src="./js/script.js"></script>
+	</body>
+</html>

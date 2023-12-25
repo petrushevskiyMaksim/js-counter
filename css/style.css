@@ -1,0 +1,126 @@
+body {
+	max-height: 100%;
+	max-width: 100%;
+	font-family: Manrope, sans-serif;
+	font-weight: 700;
+	line-height: normal;
+	color: #fff;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.counter {
+	margin-bottom: 50px;
+}
+
+.container {
+	max-width: 1900px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.counter__inner {
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	row-gap: 40px;
+}
+
+.couner__title {
+	color: #000;
+	font-size: 40px;
+}
+
+.counter__number {
+	font-size: 48px;
+	color: #000;
+}
+
+.counter__button-value-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 30px;
+}
+
+.btn {
+	min-width: 300px;
+	padding: 20px 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	transition: background-color 0.3s ease-in;
+}
+
+.counter-btn {
+	background-color: #4191ff;
+}
+
+.counter-btn:hover {
+	background-color: #60a0f9;
+}
+
+.counter-btn-reset {
+	padding: 20px 80px;
+	background-color: #d45366;
+}
+
+.counter-btn-reset:hover {
+	background-color: #cd5f70;
+}
+
+@media (max-width: 1024px) {
+	.counter-btn {
+		min-width: 235px;
+		padding: 20px 20px;
+	}
+}
+
+@media (max-width: 830px) {
+	.counter-btn {
+		min-width: 215px;
+		padding: 20px 10px;
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.counter__button-value-wrapper {
+		column-gap: 20px;
+	}
+	.counter-btn {
+		min-width: 185px;
+		padding: 20px 10px;
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 650px) {
+	.counter__inner {
+		padding-top: 30px;
+		row-gap: 30px;
+	}
+	.couner__title {
+		font-size: 30px;
+	}
+
+	.counter__button-value-wrapper {
+		flex-direction: column;
+		row-gap: 20px;
+	}
+
+	.btn {
+		min-width: 250px;
+	}
+}
